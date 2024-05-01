@@ -471,10 +471,13 @@ header h1 img{
 
 /*section4*/
 #yt_video{
-   padding: 20px;
+   padding: 40px 20px;
+}
+#yt_video .yt_video_wrap{
+    width: 100%;
 }
 #yt_video h2{
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -484,13 +487,13 @@ header h1 img{
 #yt_video p{
     text-align: center;
     font-weight: bold;
-    font-size: 12px;
+    
 }
 #yt_video .md_video{
     position:relative; 
     margin:  0 auto;
-    width: 80%;
-     height: 18%;
+    width: 100%;
+     height: 30%;
     overflow:hidden;
     margin-top: 20px;
 }
