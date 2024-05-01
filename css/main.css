@@ -656,7 +656,7 @@ header h1 img{
 @media screen and (min-width:768px) {
     /*section1 메인비주얼 사진 크기조절*/
     #main_visual .main_visual_pic{
-        width: 60%;
+        width: 50%;
         top: 35%;
     }
   
@@ -939,12 +939,15 @@ header h1 img{
 
 
     #yt_video h2{
+        font-size: 70px;
         margin-bottom: 40px;
     }
     #yt_video p{
         font-size: 18px;
         margin-bottom: 40px;
     }
+
+
     #gallery .sub_title{
         margin-bottom: 40px;
         font-size: 40px;
