@@ -30,7 +30,8 @@
 .my_recipe .title,
 .recom_menu .title,
 .whole_menu .title{
-    font-size: 18px; 
+    font-size: 18px;
+    font-weight: bold;
     margin: 40px 0 20px 0;
 }
 
@@ -178,8 +179,11 @@
 .whole_menu_box li{
     width: calc(100% / 2);
     margin-bottom: 20px;
+    position: relative;
 }
-
+.whole_menu_box li a{
+    display: block;
+}
 .whole_menu_box li img{
     width: 100%;
 }
@@ -193,6 +197,9 @@
 }
 .whole_menu_box li dl dd{
     font-size: 12px;
+}
+.whole_menu_box li .menu_cover{
+    display: none;
 }
 
 
@@ -221,6 +228,12 @@
         width: calc(100% / 3);
     }
 
+    .my_recipe .title,
+    .recom_menu .title,
+    .whole_menu .title{
+        font-size: 22px;
+    }
+
 
     
     
@@ -234,11 +247,21 @@
         background-color:#2C2F31;
         border: 0;
     }
+    .gnb > li .depth2{
+        background-color: #E83B3B;
+    }
     #main_content .inner{
        width: 987px;;
        margin: 0 auto;
        position: relative;
     }
+
+    .my_recipe .title,
+    .recom_menu .title,
+    .whole_menu .title{
+        font-size: 25px;
+    }
+
    
     .sub2_main_visual{
         height: 600px;
@@ -250,15 +273,47 @@
         font-size: 18px;
     }
 
+    .whole_menu_box li dl{
+        display: none;
+    }
+
 
     .whole_menu_box li{
         width: calc(100% / 4);
     }
 
-    .whole_menu_box li .cover{
+ 
+
+    .whole_menu_box li .menu_cover{
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;;
         background-color: rgba(0, 0, 0, 0.8);
-        display: none;
+        color: #fff;
+        text-align: center;
+        padding: 70px 20px;
+        opacity: 0;
+        transition: all 0.5s;
+        display: block;
     }
+    .whole_menu_box li:hover .menu_cover{
+        opacity: 1;
+    }
+
+    .whole_menu_box li .menu_cover h3{
+        font-size: 18px;
+    }
+    .whole_menu_box li .menu_cover span{
+        margin: 15px 0;
+    }
+    .whole_menu_box li .menu_cover p{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+
 
     
     

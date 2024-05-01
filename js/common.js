@@ -20,9 +20,19 @@ $(document).ready(function(){//시작
     //depth2 메뉴 작동
     $(".mdepth2").hide();
     $(".mgnb > li").click(function(){
+
+        if($(this).children(".mdepth2").css("display") == "block"){
+            $(this).children(".mdepth2").stop().slideUp();
+        }else{
+            $(".mdepth2").stop().slideUp();
+            $(this).children(".mdepth2").stop().slideDown();
+        }
+        /*
         $(".mdepth2").stop().slideUp();
         $(this).children(".mdepth2").stop().slideDown();
+        */
     });
+    
 
     //pc depth2 서브 메뉴 작동
     $(".gnb > li").mouseenter(function(){
