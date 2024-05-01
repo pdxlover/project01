@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/*모바일*/
+
+.sub2_main_visual{
+    width: 100%;
+    height: 450px;
+    padding: 40px;
+    background: url(../img/main_visual_sub2.png) no-repeat center / cover;
+}
+.sub2_main_visual h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.sub2_main_visual p{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+#main_content{
+    padding: 40px 20px;
+}
+
+
+.my_recipe .title,
+.recom_menu .title,
+.whole_menu .title{
+    font-size: 18px; 
+    margin: 40px 0 20px 0;
+}
+
+
+.my_recipe_box{
+    width: 100%;
+    height: auto;
+}
+.my_recipe_box .photo{
+    width: 100%;
+
+    margin-bottom: 20px;
+
+}
+.my_recipe_box .photo img{
+    width: 100%;
+    height: 100%;
+}
+.my_recipe_box .step{
+    width: 100%;
+    height: 100%;
+    background-color: #E83B3B;
+    border-radius: 30px;
+    padding: 40px;
+
+}
+.my_recipe_box .step .step_all{
+    margin-bottom: 40px;
+}
+.my_recipe_box .step .step3{
+    margin-bottom: 60px;
+}
+
+.my_recipe_box .step select{
+    width: 70%;
+    padding: 5px 40px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background-color: #E83B3B;
+    color: #fff;
+    white-space: nowrap;
+}
+.my_recipe_box .step option{
+   background-color:#2C2F31;
+   color: #fff;
+   text-align: center;
+}
+.my_recipe_box .step label{
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.my_recipe_box .step .order{
+   display: flex;
+}
+.my_recipe_box .step .order .cart_btn,
+.my_recipe_box .step .order .order_btn{
+    display: block;
+    width: 50%;
+    padding: 5px 40px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background-color: #E83B3B;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    white-space: nowrap;
+   }
+
+
+/*추천메뉴*/
+.recom_menu{
+    width: 100%;
+
+}
+.menu_slide li{
+
+    transform: scale(0.5);
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.menu_slide li.swiper-slide-active{
+    transform: scale(1);
+    opacity: 1;
+}
+.menu_slide li img{
+    width: 100%;
+   
+}
+
+.menu_slide{
+    padding-bottom: 60px;
+}
+.menu_slide .swiper-pagination-bullet{
+    background-color: #fff;
+}
+
+.menu_slide dl dt{
+    font-size: 25px;
+    padding: 20px 0 10px;
+    text-align: center;
+    color: #E83B3B;
+}
+.menu_slide dl dd{
+    color: #2C2F31;
+    text-align: center;
+}
+
+
+/*전체메뉴*/
+.tap_menu{
+    margin: 20px 0;
+    /*display: flex;*/
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.tap_menu li{
+    background-color: #2C2F31;
+    border-radius: 40px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.tap_menu li a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 40px;
+    text-align: center;
+    line-height: 40px;
+    white-space: nowrap;
+}
+.tap_menu li:last-child a{
+    border-right: 0;
+}
+.tap_menu li:hover a{
+    color: #E83B3B;
+}
+
+
+.whole_menu_box{
+   display: flex;
+   flex-wrap: wrap;
+}
+.whole_menu_box li{
+    width: calc(100% / 2);
+    margin-bottom: 20px;
+}
+
+.whole_menu_box li img{
+    width: 100%;
+}
+
+.whole_menu_box li dl{
+    text-align: center;
+}
+.whole_menu_box li dl dt{
+    font-size: 16px;
+    font-weight: bold;
+}
+.whole_menu_box li dl dd{
+    font-size: 12px;
+}
+
+
+
+
+/*768 이상*/
+@media screen and (min-width:768px) {
+
+    .tap_menu{
+        overflow: hidden;
+    }
+
+
+    .my_recipe_box{
+        display: flex;
+    }
+    .my_recipe_box .photo{
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .my_recipe_box .step{
+        height: 450px;
+        padding: 80px 40px;
+    }
+    .whole_menu_box li{
+        width: calc(100% / 3);
+    }
+
+
+    
+    
+}
+
+/*1200 이상*/
+
+
+@media screen and (min-width:1200px) {
+    header{
+        background-color:#2C2F31;
+        border: 0;
+    }
+    #main_content .inner{
+       width: 987px;;
+       margin: 0 auto;
+       position: relative;
+    }
+   
+    .sub2_main_visual{
+        height: 600px;
+    }
+    .sub2_main_visual h2{
+        font-size: 70px;
+    }
+    .sub2_main_visual p{
+        font-size: 18px;
+    }
+
+
+    .whole_menu_box li{
+        width: calc(100% / 4);
+    }
+
+    .whole_menu_box li .cover{
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+    }
+
+    
+    
+    
+}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*section1 움직이는 글*/
+@keyframes wordMove{
+    from{transform: translateX(-100%);}
+    to{transform: translatex(0);}
+}
+@keyframes wordMove2{
+    from{transform: translateX(0);}
+    to{transform: translatex(-100%);}
+}
+
+
+/*메뉴 사진 움직임*/
+@keyframes menuAni{
+    from{transform: rotate(0);}
+    to{transform: rotate(-30deg);}
+}
+/*메뉴 사진 텍스트 움직임*/
+@keyframes menuTextUp{
+    from{transform: translate(-50%,30%); opacity: 0;}
+    to{transform: translate(-50%,-100%); opacity: 1;}
+}
+
+
+/* 로고 애니 */
+@keyframes logoAni_bowl{
+    0%{transform: translate(-50%, -700%);}
+    75%{transform: translate(-50%, -60%);}
+    90%{transform: translate(-50%, -60%) rotate(15deg);}
+    100%{transform: translate(-50%, -60%) rotate(0);}
+}
+@keyframes logoAni_lettuce1{
+    from{transform: translate(-70%, -700%);}
+    to{transform: translate(-70%, -105%);}
+}
+@keyframes logoAni_lettuce2{
+    from{transform: translate(-30%, -700%);}
+    to{transform: translate(-30%, -105%);}
+}
+@keyframes logoAni_carrot{
+    from{transform: translate(-5%, -700%);}
+    to{transform: translate(-5%, -90%);}
+}
+@keyframes logoAni_eyes{
+     0%{transform: translate(-50%, -700%);}
+    75%{transform: translate(-50%, -105%);}
+    90%{transform: translate(-50%, -150%);}
+    100%{transform: translate(-50%, -105%);}
+}
+@keyframes logoAni_eyeballs{
+    from{transform: translate(-50%, -700%);}
+    to{transform: translate(-50%, -105%);}
+}
+
+@keyframes logoAni_eyebrows{
+    0%{transform: translate(-40%, -700%);}
+    75%{transform: translate(-40%, -105%);}
+    90%{transform: translate(-40%, -150%);}
+    100%{transform: translate(-40%, -105%);}
+}
+
+@keyframes logoAni_letter{
+    0%{transform: translate(-50%, -4000%);}
+    75%{transform: translate(-50%, -60%);}
+    90%{transform: translate(-50%, -150%) rotate(15deg);}
+    100%{transform: translate(-50%, 30%) rotate(0);}
+}
+@keyframes logoAni_slogan{
+    0%{transform: translate(-50%, -5000%);}
+    75%{transform: translate(-50%, -70%);}
+    90%{transform: translate(-50%, -150%) rotate(-15deg);}
+    100%{transform: translate(-50%, 20%) rotate(0);}
+}
+
+
+
+

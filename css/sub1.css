@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/*모바일*/
+.sub1_main_visual{
+    width: 100%;
+    height: 450px;
+    background:url(../img/main_visual_sub1.png) no-repeat center / cover;
+    padding: 40px;
+}
+.sub1_main_visual h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.sub1_main_visual p{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+#main_content .brand_story .inner{
+    padding: 80px 20px;
+}
+#main_content .fresh .inner,
+#main_content .tasty .inner,
+#main_content .study .inner{
+    padding: 80px 20px;
+}
+#main_content .fresh, #main_content .study{
+    width: 100%;
+    background-color: #F1F1F1;
+}
+
+#main_content .brand_story h3{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+#main_content .brand_story p{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#main_content .brand_story .sub1_video{
+    width: 100%;
+    height: 400px;
+    margin:40px 0;
+} 
+#main_content .brand_story .sub1_video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+ .m_photo{
+    width: 100%;
+    height: 40%;
+
+}
+.w_photo{
+   display: none;
+}
+
+.slogan_title{
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.slogan_subtitle{
+    display: block;
+    font-size: 20px;
+    padding-left: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.slogon_txt{
+    padding-left: 100px;
+    padding-bottom: 40px;
+}
+
+
+
+/*768 이상*/
+@media screen and (min-width:768px) {
+    #main_content .brand_story .inner{
+        padding: 80px 20px;
+    }
+    #main_content .fresh .inner,
+    #main_content .tasty .inner,
+    #main_content .study .inner{
+        padding: 80px 20px;
+    }
+    .sub1_main_visual h2{
+        font-size: 60px;
+    }
+    .sub1_main_visual p{
+        font-size: 16px;
+    }
+    #main_content .brand_story h3{
+        font-size: 50px;
+    }
+     #main_content .brand_story .sub1_video{
+        width: 100%;
+        height: 500px;
+        margin:20px 0;
+    } 
+    #main_content .brand_story .sub1_video iframe{
+        width: 100%;
+        height: 100%;
+    } 
+    .m_photo{
+        display: none;
+    }
+    .w_photo{
+        display: block;
+        width: 100%;
+        height: 30%;
+     }
+     .slogan_title{
+        padding-left: 200px;
+        font-size: 90px;
+    }
+    .slogan_subtitle{
+        padding-left: 200px;
+        font-size: 40px;
+    }
+    .slogon_txt{
+        padding-left: 200px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+
+
+/*1200 이상*/
+@media screen and (min-width:1200px) {
+    header{
+        background-color:#2C2F31;
+        border: 0;
+    }
+    .gnb > li .depth2{
+        background-color: #E83B3B;
+    }
+    .sub1_main_visual h2{
+        font-size: 70px;
+    }
+    
+    #main_content .inner{
+        width: 987px;
+        margin: 0 auto;
+    }
+    .sub1_main_visual{
+        height: 600px;
+    }
+    .sub1_main_visual h2{
+        padding-top: 200px;
+    }
+    #main_content .brand_story .inner{
+        padding: 80px 0;
+    }
+    #main_content .fresh .inner,
+    #main_content .tasty .inner,
+    #main_content .study .inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+    }
+    #main_content .fresh, #main_content .study{
+        width: 100%;
+        background-color: #F1F1F1;
+    }
+   
+    #main_content .left_box{
+        width: 60%;
+        height:40%;
+    
+     }
+     #main_content .right_box{
+        width: 38%;
+        height:auto;
+        padding-top: 220px;
+       
+     }
+     #main_content .slogan_title{
+        padding-left: 20px;
+        font-size: 60px;
+    }
+    #main_content .slogan_subtitle{
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    #main_content .slogon_txt{
+        padding-left: 20px;
+        font-size: 16px;
+     
+    }
+     
+}
