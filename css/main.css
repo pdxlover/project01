@@ -152,6 +152,7 @@ header h1 img{
     background-color: #E83B3B;
     position: relative;
     padding: 0 20px;
+    overflow: hidden;
 }
 #main_visual .moving_word_wrap{
     transform: rotate(-10deg);
